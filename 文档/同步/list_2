@@ -1,0 +1,109 @@
+{
+    "name": "date_time",
+    "index": 0,
+    "type": "varchar"
+},
+{
+    "name": "rank_order",
+    "index": 1,
+    "type": "varchar"
+},
+{
+    "name": "rank_name",
+    "index": 2,
+    "type": "varchar"
+},
+{
+    "name": "create_time",
+    "index": 3,
+    "type": "varchar"
+},
+{
+    "name": "pens_agency_num",
+    "index": 4,
+    "type": "varchar"
+},
+{
+    "name": "bed_num",
+    "index": 5,
+    "type": "varchar"
+},
+{
+    "name": "bed_use_rate",
+    "index": 6,
+    "type": "varchar"
+},
+{
+    "name": "pens_serv_num",
+    "index": 7,
+    "type": "varchar"
+},
+{
+    "name": "pens_home_num",
+    "index": 8,
+    "type": "varchar"
+},
+{
+    "name": "pens_agency_cover_rate",
+    "index": 9,
+    "type": "varchar"
+},
+{
+    "name": "create_time",
+    "index": 10,
+    "type": "varchar"
+},
+{
+    "name": "agency_name",
+    "index": 11,
+    "type": "varchar"
+},
+{
+    "name": "address",
+    "index": 12,
+    "type": "varchar"
+},
+{
+    "name": "type",
+    "index": 13,
+    "type": "varchar"
+},
+{
+    "name": "serv_info",
+    "index": 14,
+    "type": "varchar"
+},
+{
+    "name": "subsidy_pay",
+    "index": 15,
+    "type": "varchar"
+},
+{
+    "name": "create_time",
+    "index": 16,
+    "type": "varchar"
+}
+
+
+"writeMode": "insert ignore",
+"userName": "deploy",
+"table": "hyl_pension_benef",
+"preSql": [
+    "truncate table hyl_pension_benef"
+],
+
+
+"setting": {
+    "memory": {
+        "unit": "GB",
+        "size": 1,
+        "setMemory": false
+    },
+    "errorLimit": {
+        "record": 0
+    },
+    "speed": {
+        "throttle": false,
+        "channel": 5
+    }
+}

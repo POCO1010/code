@@ -1,0 +1,16 @@
+Git 全局设置:
+
+git config --global user.name "POCOPOCOPOCO" 
+git config --global user.email "905090540@qq.com"
+
+cd d:/wamp/www/mall360/wap              //首先指定到你的项目目录下
+git init
+touch README.md
+git add README.md
+git commit -m "first commit"
+git remote add origin https://gitee.com/POCOPOCOPOCO/CODE   //用你仓库的url
+git push -u origin master  //提交到你的仓库
+
+$ ssh -T POCOPOCOPOCO@gitee.com
+// 使用github的同学，则改为
+ssh -T POCO1010@github.com

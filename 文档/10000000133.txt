@@ -1,0 +1,5 @@
+"profitIncreaseRateNum":0.23
+"shreSpace":33.0
+"profitIncreaseRate":"0.23元"
+"userCount":8.0
+"activeUserCount":0.0

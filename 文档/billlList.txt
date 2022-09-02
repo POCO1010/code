@@ -1,0 +1,32 @@
+"billID":6027
+"should":2.0
+"pay":2.0
+"freeMoney":0.0
+"autoFreeMoney":0.0
+"advPaid":0.0
+"prePaid":0.0
+"payType":3
+"plate":"辽A6L60S"
+"discountNames":""
+"remark":"02412400405120220507070107000"
+"chargeTime":"2022-05-07 08:23:44"
+"startTime":"2022-05-07 08:23:44"
+"endTime":"2022-05-07 08:23:44"
+"orderCode":"d708886890cdec118abc005056bb79ab"
+"orderID":"d708886890cdec118abc005056bb79ab"
+"operatorID":0
+"operatorName":""
+"userID":0
+"regularFreeMoney":0.0
+"unPaid":0.0
+"recordIDs":null
+"chargeType":103
+"flags":0
+"deviceName":null
+"isError":0
+"exterRecordIDs":"00"
+"platformOrderCode":""
+"discountCodes":""
+"openID":null
+"userTypeStr":null
+"deviceNames":null

@@ -1,0 +1,150 @@
+{
+    "job": {
+        "content": [
+            {
+                "reader": {
+                    "parameter": {
+                        "modifyUserName": "wuxiaofan",
+                        "partition": "ds=${bizdate}",
+                        "hive2Url": "emr.master1.local:2181,emr.node2.local:2181,emr.node1.local:2181",
+                        "dbName": "cockpit_dev",
+                        "column": [
+                        {
+                                "name": "region",
+                                "type": "string"
+                            },
+                            {
+                                "name": "district",
+                                "type": "string"
+                            },
+                            {
+                                "name": "street",
+                                "type": "string"
+                            },
+                            {
+                                "name": "community",
+                                "type": "string"
+                            },
+                            {
+                                "name": "policy_num",
+                                "type": "int"
+                            },
+                            {
+                                "name": "policy_implt_amount",
+                                "type": "double"
+                            },
+                            {
+                                "name": "good_comms",
+                                "type": "string"
+                            },
+                            {
+                                "name": "good_rate",
+                                "type": "double"
+                            },
+                            {
+                                "name": "enterprise_type",
+                                "type": "string"
+                            },
+                            {
+                                "name": "create_time",
+                                "type": "string"
+                            }
+                        ],
+                        "userName": "deploy",
+            			"table": "adm_hzc_implt_amount"
+                    },
+                    "name": "hivereader"
+                },
+                "writer": {
+                    "parameter": {
+                        "modifyUserName": "wuxiaofan",
+                        "password": "******",
+                        "dbName": "shenyang_cockpit",
+                        "column": [
+                            {
+                                "name": "region",
+                                "index": 0,
+                                "type": "varchar"
+                            },
+                            {
+                                "name": "district",
+                                "index": 1,
+                                "type": "varchar"
+                            },
+                            {
+                                "name": "street",
+                                "index": 2,
+                                "type": "varchar"
+                            },
+                            {
+                                "name": "community",
+                                "index": 3,
+                                "type": "varchar"
+                            },
+                            {
+                                "name": "policy_num",
+                                "index": 4,
+                                "type": "int"
+                            },
+                            {
+                                "name": "policy_implt_amount",
+                                "index": 5,
+                                "type": "double"
+                            },
+                            {
+                                "name": "good_comms",
+                                "index": 6,
+                                "type": "varchar"
+                            },
+                            {
+                                "name": "good_rate",
+                                "index": 7,
+                                "type": "double"
+                            },
+                            {
+                                "name": "enterprise_type",
+                                "index": 8,
+                                "type": "varchar"
+                            },
+                            {
+                                "name": "create_time",
+                                "index": 9,
+                                "type": "varchar"
+                            }
+                        ],
+                        "connection": [
+                            {
+                                "jdbcUrl": "10.96.193.183:3306",
+                                "table": [
+                                    "hzc_implt_amount"
+                                ]
+                            }
+                        ],
+                        "writeMode": "insert ignore",
+                        "userName": "deploy",
+                        "table": "hzc_implt_amount",
+                        "preSql": [
+                            "truncate table hzc_implt_amount"
+                        ],
+                        "username": "app"
+                    },
+                    "name": "mysqlwriter"
+                }
+            }
+        ],
+        "setting": {
+            "memory": {
+                "unit": "GB",
+                "size": 1,
+                "setMemory": false
+            },
+            "errorLimit": {
+                "record": 0
+            },
+            "speed": {
+                "throttle": false,
+                "channel": 5
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+"travelPlanningNum":0.0
+"spaceDemandNum":11761.0
+"cumulativeParkingNum":"1068.55 万"
+"totalCarCount":2688739.0
+"inductionServiceNum":1391.0
+"coveredCarRate":"2.19%"
+"totalServiceNum":13755.0
+"payInBackNum":377.0
+"berthReminderNum":0.0
+"sharedParkingNum":2.0
+"spacePredictionNum":0.0
+"spaceReservationNum":224.0
+"coveredCarNum":58788.0

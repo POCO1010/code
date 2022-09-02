@@ -1,0 +1,7 @@
+"visitOut":0
+"statDate":"2022-05-07 00:00:00"
+"temporaryOut":330
+"visitIn":0
+"fixedOut":0
+"fixedIn":0
+"temporaryIn":678

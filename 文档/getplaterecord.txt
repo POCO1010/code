@@ -1,0 +1,7 @@
+"recordID":481964
+"recordTime":"2022-05-07 15:51:20"
+"parkName":"沈阳市全民健身中心停车场"
+"imageUrl":"http://shenyang.ttpark.cn/PublicV2/recordmedia/image/special/12400283/481964"
+"plate":"辽AX0Z67"
+"type":0
+"parkID":12400283

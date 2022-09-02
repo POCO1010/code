@@ -1,0 +1,4 @@
+"totalUserNum":283308.0
+"monthActiveUserNum":21200.0
+"userTrend":[{"monthActiveUserNum":21972.0,"userNum":30663.0,"time":"2021-12"},{"monthActiveUserNum":65199.0,"userNum":95501.0,"time":"2022-01"},{"monthActiveUserNum":40619.0,"userNum":279172.0,"time":"2022-04"},{"monthActiveUserNum":20294.0,"userNum":112670.0,"time":"2022-02"},{"monthActiveUserNum":130615.0,"userNum":238990.0,"time":"2022-03"},{"monthActiveUserNum":21200.0,"userNum":283308.0,"time":"2022-05"}]
+"userIncreaseRate":"1.48%"

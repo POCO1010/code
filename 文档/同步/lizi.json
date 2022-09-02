@@ -1,0 +1,112 @@
+{
+    "job": {
+        "content": [
+            {
+                "reader": {
+                    "parameter": {
+                        "modifyUserName": "chenmin",
+                        "hive2Url": "emr.master1.local:2181,emr.node2.local:2181,emr.node1.local:2181",
+                        "dbName": "cockpit_dev",
+                        "column": [
+                            {
+                                "name": "date_time",
+                                "type": "string"
+                            },
+                            {
+                                "name": "parkinglot_sumnum",
+                                "type": "int"
+                            },
+                            {
+                                "name": "link_parkinglot_onlinenum",
+                                "type": "int"
+                            },
+                            {
+                                "name": "parkingspace_num",
+                                "type": "int"
+                            },
+                            {
+                                "name": "link_parkingspace_onlinenum",
+                                "type": "int"
+                            },
+                            {
+                                "name": "create_time",
+                                "type": "string"
+                            }
+                        ],
+                        "userName": "deploy",
+                        "table": "adm_htc_park_generalize"
+                    },
+                    "name": "hivereader"
+                },
+                "writer": {
+                    "parameter": {
+                        "modifyUserName": "chenmin",
+                        "password": "******",
+                        "dbName": "shenyang_cockpit",
+                        "column": [
+                            {
+                                "name": "date_time",
+                                "index": 0,
+                                "type": "varchar"
+                            },
+                            {
+                                "name": "parkinglot_sumnum",
+                                "index": 1,
+                                "type": "int"
+                            },
+                            {
+                                "name": "link_parkinglot_onlinenum",
+                                "index": 2,
+                                "type": "int"
+                            },
+                            {
+                                "name": "parkingspace_num",
+                                "index": 3,
+                                "type": "int"
+                            },
+                            {
+                                "name": "link_parkingspace_onlinenum",
+                                "index": 4,
+                                "type": "int"
+                            },
+                            {
+                                "name": "create_time",
+                                "index": 5,
+                                "type": "varchar"
+                            }
+                        ],
+                        "connection": [
+                            {
+                                "jdbcUrl": "10.96.193.183:3306",
+                                "table": [
+                                    "htc_park_generalize"
+                                ]
+                            }
+                        ],
+                        "writeMode": "insert ignore",
+                        "table": "htc_park_generalize",
+                        "preSql": [
+                            "truncate table htc_park_generalize"
+                        ],
+                        "username": "app"
+                    },
+                    "name": "mysqlwriter"
+                }
+            }
+        ],
+        "setting": {
+            "memory": {
+                "unit": "GB",
+                "size": 1,
+                "setMemory": false
+            },
+            "errorLimit": {
+                "record": 0
+            },
+            "speed": {
+                "throttle": false,
+                "channel": 5
+            }
+        }
+    }
+}

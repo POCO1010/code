@@ -1,0 +1,4 @@
+"statDate":"2022-05-07 00:00:00"
+"paid":4.0
+"should":4.0
+"freeMoney":0.0

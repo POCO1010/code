@@ -1,0 +1,11 @@
+"id":"41"
+"text":"河南省"
+"seniorID":0
+"type":"PROVINCE"
+"mapid":"41"
+"coordinateX":113.665412
+"coordinateY":34.757975
+"coordinateType":"GCJ02"
+"coordinate":"113.665412,34.757975"
+"border":""
+"children":[{"id":"4101","text":"郑州 市","seniorID":41,"type":"CITY","mapid":"4101","coordinateX":113.665412,"coordinateY":34.757975,"coordinateType":"GCJ02","coordinate":"113.665412,34.757975","border":"","children":[{"id":"410102","text":"中原区","seniorID":4101,"type":"DISTRICT","mapid":"410102","coordinateX":113.611576,"coordinateY":34.748286,"coordinateType":"GCJ02","coordinate":"113.611576,34.748286","border":"","children":null}

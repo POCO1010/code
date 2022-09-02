@@ -1,0 +1,36 @@
+来返沈人员
+
+--来返沈告警概览（只返回最新时间）
+--来返沈趋势（）
+--入沈漏备筛查（）
+--入沈地区（返回总数与来返人员概览不符）
+--入沈地区下钻（下钻数据应与首页展示逻辑相同，即相加等于上层数据）
+--来返人员概览（获取到的数据与浪潮数据不一致）
+--来返沈告警处置下钻（只返回最新时间）
+
+
+一码通
+
+--通行证办理进度下钻（只返回最新时间数据）
+--办理趋势（数据不全-具体如何展示待商榷）
+--通行证扫码概览（只返回最新时间数据）
+--通行证使用趋势（时间需连续）
+--通行证管控趋势(更改数据逻辑--与来犯沈趋势相同)
+--通行证管控分类（只展示最新时间）
+--通行证管控范围（无区县数据）
+--办理群体统计（数值错误）
+--一码通城下钻个人详细信息（有重复数据）
+--通行证管控范围下钻（只展示最新时间）
+
+
+   where
+    date_time in (select max(date_time) from dpxp_lfsry_enter_region)
+
+
+    and date_time <= date_sub(FROM_UNIXTIME(UNIX_TIMESTAMP()),2)
+
+
+    where 
+    region_name = ${region_name}
+     and date_time <= DATE_FORMAT(DATE_SUB(CURDATE(),INTERVAL 0 DAY),'%m-%d')
+and date_time >= DATE_FORMAT(DATE_SUB(CURDATE(),INTERVAL ${plotSize} DAY),'%m-%d') order by date_time

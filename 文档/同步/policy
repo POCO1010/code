@@ -1,0 +1,122 @@
+{
+    "job": {
+        "content": [
+            {
+                "reader": {
+                    "parameter": {
+                        "modifyUserName": "wuxiaofan",
+                        "partition": "ds=${bizdate}",
+                        "hive2Url": "emr.master1.local:2181,emr.node2.local:2181,emr.node1.local:2181",
+                        "dbName": "cockpit_dev",
+                        "column": [
+                            {
+                                "name": "declare_enterprises",
+                                "type": "int"
+                            },
+                            {
+                                "name": "cashed_enterprises",
+                                "type": "int"
+                            },
+                            {
+                                "name": "cashed_funds",
+                                "type": "int"
+                            },
+                            {
+                                "name": "benef_num",
+                                "type": "int"
+                            },
+                            {
+                                "name": "stock_orders_city",
+                                "type": "int"
+                            },
+                            {
+                                "name": "stock_orders_region",
+                                "type": "int"
+                            },
+                            {
+                                "name": "create_time",
+                                "type": "string"
+                            }
+                        ],
+                        "userName": "deploy",
+                        "table": "adm_hzc_policy_implt"
+                    },
+                    "name": "hivereader"
+                },
+                "writer": {
+                    "parameter": {
+                        "modifyUserName": "wuxiaofan",
+                        "password": "******",
+                        "dbName": "shenyang_cockpit",
+                        "column": [
+                        
+                            {
+                                "name": "declare_enterprises",
+                                "index": 0,
+                                "type": "int"
+                            },
+                            {
+                                "name": "cashed_enterprises",
+                                "index": 1,
+                                "type": "int"
+                            },
+                            {
+                                "name": "cashed_funds",
+                                "index": 2,
+                                "type": "int"
+                            },
+                            {
+                                "name": "benef_num",
+                                "index": 3,
+                                "type": "int"
+                            },
+                            {
+                                "name": "stock_orders_city",
+                                "index": 4,
+                                "type": "int"
+                            },
+                            {
+                                "name": "stock_orders_region",
+                                "index": 5,
+                                "type": "int"
+                            },
+                            {
+                                "name": "create_time",
+                                "index": 6,
+                                "type": "varchar"
+                            }],
+                        "connection": [
+                            {
+                                "jdbcUrl": "10.96.193.183:3306",
+                                "table": [
+                                    "hzc_policy_implt"
+                                ]
+                            }
+                        ],
+                        "writeMode": "insert ignore",
+                        "table": "hzc_policy_implt",
+                        "preSql": [
+                            "truncate table hzc_policy_implt"
+                        ],
+                        "username": "app"
+                    },
+                    "name": "mysqlwriter"
+                }
+            }
+        ],
+        "setting": {
+            "memory": {
+                "unit": "GB",
+                "size": 1,
+                "setMemory": false
+            },
+            "errorLimit": {
+                "record": 0
+            },
+            "speed": {
+                "throttle": false,
+                "channel": 5
+            }
+        }
+    }
+}
